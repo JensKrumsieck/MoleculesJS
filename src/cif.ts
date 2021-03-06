@@ -13,7 +13,7 @@ export default class CIF {
     gamma: number
 
     constructor(content: string) {
-        this.content = content;
+        this.content = content.replace(/(?:[\r])/g, "");
         this.setParameters();
     }
 
