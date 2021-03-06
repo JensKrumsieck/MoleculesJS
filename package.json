@@ -5,7 +5,8 @@
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "scripts": {
-    "testJS": "tsc && ncp src/test/files dist/test/files && tape ./dist/test/test.js",
+    "build": "tsc",
+    "testJS": "npm run build && ncp src/test/files dist/test/files && tape ./dist/test/test.js",
     "test": "npm run testJS"
   },
   "author": "",
