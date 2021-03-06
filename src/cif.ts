@@ -28,7 +28,7 @@ export default class CIF {
         var bondLoop = loops.find(s => s.includes('_geom_bond_atom_site_label_1'));
         var atoms = this.extractAtoms(molLoop)
         var bonds = this.extractBonds(bondLoop, atoms)
-        return new Molecule(atoms, bonds);
+        return new Molecule({ atoms, bonds });
     }     
 
     private extractAtoms(molLoop:string): Atom[] {
