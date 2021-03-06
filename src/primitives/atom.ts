@@ -9,7 +9,7 @@ export class Atom {
         this.location = location
         this.symbol = symbol
         this.color = Atom.col[symbol.toLowerCase()]
-        this.radius = elements.find(s => s.Symbol == this.symbol)?.CovalentRadius ?? 0;
+        this.radius = elements.find(s => s.Symbol == this.symbol).CovalentRadius;
     }
     id: number
     location: Vector3
