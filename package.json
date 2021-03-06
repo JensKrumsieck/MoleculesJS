@@ -1,5 +1,5 @@
 {
-  "name": "moleculesjs",
+  "name": "@jenskrumsieck/moleculesjs",
   "version": "0.0.1",
   "description": "Some TypeScript Molecule Parsers",
   "main": "dist/index.js",
@@ -18,7 +18,7 @@
     "test": "npm run testJS"
   },
   "author": "JensKrumsieck",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "three": "^0.126.0",
     "uuid": "^8.3.2"
