@@ -62,7 +62,7 @@ export default class CIF {
 
             //check if atoms existing
             if (atoms.filter(s => s.title == atom1).length == 1 && atoms.filter(s => s.title == atom2).length == 1)
-                bonds.push({ atom1: atom1, atom2: atom2 })
+                bonds.push({ atom1: atoms.filter(s => s.title == atom1), atom2: atoms.filter(s => s.title == atom2) })
         }
         return bonds;
     }
