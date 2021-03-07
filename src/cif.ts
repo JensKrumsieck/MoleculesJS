@@ -61,8 +61,8 @@ export default class CIF {
             let atom2 = raw_data[1]
 
             //check if atoms existing
-            if (atoms.filter(s => s.title == atom1).length == 1 && atoms.filter(s => s.title == atom2).length == 1)
-                bonds.push({ atom1: atoms.filter(s => s.title == atom1), atom2: atoms.filter(s => s.title == atom2) })
+            if (atoms.find(s => s.title == atom1) && atoms.find(s => s.title == atom2))
+                bonds.push({ atom1: atoms.find(s => s.title == atom1), atom2: atoms.find(s => s.title == atom2) })
         }
         return bonds;
     }
