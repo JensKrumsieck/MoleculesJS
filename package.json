@@ -20,7 +20,7 @@
   "author": "JensKrumsieck",
   "license": "MIT",
   "dependencies": {
-    "three": "^0.128.0",
+    "three": "^0.131.1",
     "uuid": "^8.3.2"
   },
   "devDependencies": {
