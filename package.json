@@ -24,7 +24,7 @@
     "uuid": "^8.3.2"
   },
   "devDependencies": {
-    "@types/node": "^15.0.3",
+    "@types/node": "^16.7.10",
     "ncp": "^2.0.0",
     "tape": "^5.2.2",
     "tape-await": "^0.1"
